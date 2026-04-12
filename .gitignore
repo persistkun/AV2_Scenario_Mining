@@ -1,5 +1,16 @@
+# 忽略数据文件夹（59GB的数据绝对不能传！）
 data/
 output/
+
+# 忽略虚拟环境
+.conda/
 __pycache__/
 *.pyc
-tempCodeRunnerFile.py
+
+# 忽略 OpenPCDet 的二进制和临时文件
+OpenPCDet/build/
+OpenPCDet/dist/
+OpenPCDet/*.egg-info/
+
+# 如果你不想把整个 OpenPCDet 源码传上去（建议只传自己的代码）
+# OpenPCDet/
